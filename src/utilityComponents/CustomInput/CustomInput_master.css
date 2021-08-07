@@ -1,0 +1,24 @@
+.custom-input{
+    position: relative;
+}
+
+.custom-input > span:first-child{
+    position: absolute;
+    left: 5px;
+    top: 10%;
+    color: hsl(184, 14%, 56%);
+}
+
+.custom-input-field{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color:hsl(189, 41%, 97%);
+    direction: rtl;
+    width: 100%;
+}
+
+.custom-input-field::placeholder{
+    text-align: right;
+}
