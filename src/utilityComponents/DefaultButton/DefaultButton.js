@@ -31,7 +31,8 @@ const DefaultButton = styled.button.attrs(({...attrs}) => ({
     background-color: ${(props) => determineColor("background-color", props.buttonBg)};
     color: ${(props) => determineColor("color", props.textColor)};
     border-radius: 5px;
-    padding: 4px 8px;
+    padding: 4px 10px;
+    font-weight: 500;
     text-align: center;
 `;
 
