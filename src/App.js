@@ -8,8 +8,10 @@ import DefaultButton from './utilityComponents/DefaultButton/DefaultButton';
 function App() {
     return(
         <div className="App">
-            <p style={{fontWeight: 700}}><strong>S P L I</strong></p>
-            <p style={{fontWeight: 700}}><strong>T T E R</strong></p>
+            <div className="app-title">
+                <p style={{fontWeight: 700}}><strong>S P L I</strong></p>
+                <p style={{fontWeight: 700}}><strong>T T E R</strong></p>
+            </div>
 
             <div className="tip-container">
 
