@@ -30,7 +30,8 @@ function App() {
                             <DefaultButton buttonBg="toxic" textColor="light">15%</DefaultButton>
                             <DefaultButton buttonBg="toxic" textColor="light">25%</DefaultButton>
                             <DefaultButton buttonBg="toxic" textColor="light">50%</DefaultButton>
-                            <CustomInput inputType="text" inputPlaceholder="Custom"/>
+                            <CustomInput inputType="text" inputPlaceholder="Custom"
+                            placeholderAlign="placeholder-center"/>
                         </div>
                     </section>
 

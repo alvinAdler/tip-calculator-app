@@ -6,6 +6,7 @@ const CustomInput = ({
     icon: Icon, 
     inputType="text", 
     inputPlaceholder="Input Field", 
+    placeholderAlign="placeholder-right",
     ...rest}) => {
 
 
@@ -14,7 +15,9 @@ const CustomInput = ({
             {Icon !== undefined && 
             <span><Icon/></span>
             }
-            <input className="custom-input-field" type={inputType} placeholder={inputPlaceholder} {...rest}/>
+            <input className={`custom-input-field ${placeholderAlign}`} 
+            type={inputType} placeholder={inputPlaceholder} {...rest}
+            />
         </div>
     )
 }

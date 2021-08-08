@@ -32,8 +32,20 @@ const DefaultButton = styled.button.attrs(({...attrs}) => ({
     color: ${(props) => determineColor("color", props.textColor)};
     border-radius: 5px;
     padding: 4px 10px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
+    transition: all 150ms ease-in-out;
+
+    &:hover{
+        background-color: hsl(185, 41%, 84%);
+        color: hsl(183, 100%, 15%);
+    }
+
+    &:focus{
+        border: none;
+        background-color: #26c0ab;
+        color: #00494d;
+    }
 `;
 
 export default DefaultButton
