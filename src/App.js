@@ -54,8 +54,8 @@ function App() {
     return(
         <div className="App">
             <div className="app-title">
-                <p style={{fontWeight: 700}}><strong>S P L I</strong></p>
-                <p style={{fontWeight: 700}}><strong>T T E R</strong></p>
+                <p><strong>S P L I</strong></p>
+                <p><strong>T T E R</strong></p>
             </div>
 
             <div className="tip-container">
@@ -76,9 +76,11 @@ function App() {
                             {numberOfTip.map((tip, index) => {
                                 return(
                                     <DefaultButton key={index} buttonBg={isTheSame(numberOfTip[index], currentTip) ? 
-                                    "#26c0ab" : "toxic"} textColor={isTheSame(numberOfTip[index], currentTip) ? 
+                                    "#26c0ab" : "toxic"} 
+                                    textColor={isTheSame(numberOfTip[index], currentTip) ? 
                                     "#00494d" : "light"}
-                                    onClick={() => setCurrentTip(numberOfTip[index])}>
+                                    onClick={() => setCurrentTip(numberOfTip[index])}
+                                    >
                                         {`${tip}%`}
                                     </DefaultButton>
                                 )
@@ -99,6 +101,9 @@ function App() {
                         value={peopleQuant}
                         onChange={(ev) => setPeopleQuant(ev.target.value)}
                         />
+                        {peopleQuant === "0" && 
+                        <span>Can't be zero</span>
+                        }
                     </section>
                 </div>
         

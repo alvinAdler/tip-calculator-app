@@ -82,6 +82,23 @@
   grid-template-rows: repeat(auto-fit, 1fr);
 }
 
+.people-number{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* border: 3px solid blue; */
+}
+
+.people-number > span{
+  /* border: 3px solid red; */
+  font-weight: 700;
+  font-size: clamp(0.6rem, 1vw, 0.8rem);
+  position: relative;
+  right: 0;
+  align-self: flex-end;
+  color:#e06e02;
+}
+
 .result-field{
   /* border: 3px solid red; */
   width: 50%;
