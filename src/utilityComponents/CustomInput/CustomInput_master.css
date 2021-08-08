@@ -30,6 +30,16 @@
     font-weight: 700;
 }
 
+.custom-input-field::-webkit-outer-spin-button,
+.custom-input-field::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-input-field{
+    -moz-appearance: textfield;
+}
+
 .placeholder-right::placeholder{
     text-align: right;
 }
