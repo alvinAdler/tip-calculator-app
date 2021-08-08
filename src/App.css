@@ -39,6 +39,7 @@
   /* border: 3px solid red; */
   background-color: hsl(0, 0%, 100%);
   width: 45rem;
+  height: max-content;
   display: flex;
   /* margin: 20px 10%; */
   border-radius: 2rem;
