@@ -2,7 +2,7 @@ import {useState} from 'react'
 import {FaDollarSign, FaUserAlt} from 'react-icons/fa'
 
 import './App.css';
-
+// I have added an extra line of code to test out git.
 import CustomInput from './utilityComponents/CustomInput/CustomInput'
 import DefaultButton from './utilityComponents/DefaultButton/DefaultButton';
 
